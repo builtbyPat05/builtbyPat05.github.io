@@ -1,95 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Patrick Taylor — computer science and artificial intelligence student at Indiana University. Explore my software and machine learning projects.">
-  <meta name="theme-color" content="#f6f5ef">
-  <title>Patrick Taylor — Projects &amp; Portfolio</title>
-  <style>
-    :root { color-scheme: light; --paper:#f6f5ef; --ink:#202b25; --muted:#5d685f; --line:#cdd3c7; --green:#244d3d; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
-    a { color:inherit; text-underline-offset:5px; }
-    a:focus-visible { outline:3px solid #b36b32; outline-offset:6px; }
-    .wrap { max-width:1120px; margin:auto; padding:0 40px; }
-    .skip { position:absolute; top:-100px; padding:12px; background:var(--ink); color:white; }
-    .skip:focus { top:12px; z-index:2; }
-    header { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:28px 0; border-bottom:1px solid var(--line); }
-    .wordmark { font-size:17px; font-weight:750; text-decoration:none; letter-spacing:-.5px; }
-    .wordmark span { color:var(--muted); font-weight:400; }
-    nav { display:flex; gap:25px; font-size:14px; }
-    nav a { text-decoration:none; }
-    nav a:hover { text-decoration:underline; }
-    .hero { padding:80px 0 65px; max-width:850px; }
-    .eyebrow,.number,.label { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; text-transform:uppercase; font-size:11px; letter-spacing:1.8px; }
-    .eyebrow { color:var(--green); margin:0 0 20px; }
-    h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(48px,7vw,83px); letter-spacing:-3px; line-height:1.05; font-weight:400; margin:0 0 24px; }
-    h1 em { color:var(--green); }
-    .intro { max-width:650px; color:var(--muted); font-size:19px; line-height:1.65; margin:0 0 30px; }
-    .button { display:inline-block; background:var(--green); color:white; padding:12px 20px; text-decoration:none; font-size:14px; border:1px solid var(--green); }
-    .button:hover { background:#163729; }
-    .hero-links { display:flex; gap:24px; flex-wrap:wrap; align-items:center; font-size:14px; }
-    .section-heading { display:flex; justify-content:space-between; align-items:baseline; gap:20px; border-top:1px solid var(--line); padding-top:22px; margin-bottom:25px; }
-    h2 { font-size:23px; font-weight:550; margin:0; letter-spacing:-.5px; }
-    .label { color:var(--muted); }
-    .projects { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
-    article { border:1px solid var(--line); padding:30px; display:flex; flex-direction:column; background:#fffefa; }
-    .number { color:var(--muted); margin-bottom:26px; }
-    h3 { font-size:25px; font-weight:550; line-height:1.25; letter-spacing:-.7px; margin:0 0 15px; }
-    article p { color:var(--muted); font-size:15px; margin:0 0 22px; }
-    .tags { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:28px; }
-    .tags span { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:11px; border:1px solid var(--line); padding:3px 8px; }
-    .project-link { margin-top:auto; font-size:14px; font-weight:650; }
-    .about { display:grid; grid-template-columns:1fr 2fr; gap:50px; padding:40px 0; margin-top:48px; border-top:1px solid var(--line); }
-    .about p { margin:0 0 15px; max-width:650px; color:var(--muted); }
-    .about p:last-child { margin:0; }
-    footer { border-top:1px solid var(--line); padding:24px 0 30px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; font-size:12px; color:var(--muted); }
-    footer a { margin-left:18px; }
-    @media(max-width:650px) { .wrap { padding:0 22px; } header { gap:14px; } nav { gap:15px; font-size:12px; } .hero { padding:55px 0 45px; } h1 { letter-spacing:-2px; } .intro { font-size:17px; } .projects,.about { grid-template-columns:1fr; } .about { gap:16px; margin-top:34px; } article { padding:25px; } .section-heading .label { display:none; } footer a { margin:0 18px 0 0; } }
-    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111313">
+<title>Patrick Taylor — Creator, Builder &amp; Leader</title>
+<meta name="description" content="Meet Patrick Taylor: creator, AI builder, and team leader. Explore his projects, creative work, and leadership experience.">
+<style>
+:root{color-scheme:dark;--bg:#111313;--white:#f0eee7;--muted:#b3b6b3;--blue:#a6c9ee}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:7px}.skip{position:fixed;top:-80px;left:20px;z-index:10;background:var(--bg);padding:15px}.skip:focus{top:10px}.hero{min-height:800px;height:100svh;max-height:1300px;position:relative;isolation:isolate;overflow:hidden}.portrait{position:absolute;inset:0 auto 0 0;width:63%;z-index:-2}.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:grayscale(1) brightness(.73)}.portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 58%,var(--bg) 100%),linear-gradient(0deg,var(--bg),transparent 27%,transparent 85%,#11131366)}header{position:relative;display:flex;align-items:center;justify-content:space-between;padding:34px 4.5%;gap:30px}.brand{font-size:22px;font-weight:700;letter-spacing:-1px}.brand span{color:var(--blue)}nav{display:flex;align-items:center;gap:32px;font-size:13px}nav a:hover{color:var(--blue)}.contact{border:1px solid #737a79;padding:12px 20px;border-radius:25px}.intro{position:absolute;left:58%;right:5%;top:25%}.eyebrow{text-transform:uppercase;font-size:10px;letter-spacing:2.8px;color:var(--blue);display:flex;gap:10px;align-items:center}.eyebrow:before{content:"";height:6px;width:6px;border-radius:50%;background:var(--blue)}h1{font-size:clamp(66px,7.3vw,116px);font-weight:500;line-height:.92;letter-spacing:-.065em;margin:32px 0}h1 span{display:block;color:var(--blue)}.intro p{max-width:365px;font-size:16px;line-height:1.7;color:var(--muted);margin:25px 0 28px}.actions{display:flex;align-items:center;gap:24px;font-size:13px}.primary{background:var(--white);color:#151818;border-radius:30px;padding:15px 22px}.primary:hover{background:var(--blue)}.secondary{border-bottom:1px solid #687171;padding:8px 0}.orbit{position:absolute;left:12%;top:57%;width:40%;height:25%;pointer-events:none}.chip{position:absolute;display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.04em;animation:float 7s ease-in-out infinite;text-shadow:0 1px 6px #000}.chip i{display:block;background:var(--blue);width:48px;height:48px;border-radius:50%}.creator{left:0;top:15%;transform:rotate(-9deg)}.builder{right:0;top:0;animation-delay:-2s}.builder i{width:66px;height:66px;background:transparent;border:14px solid var(--white)}.leader{left:44%;bottom:0;animation-delay:-4s}.leader i{width:36px;height:36px;border-radius:4px;transform:rotate(15deg)}@keyframes float{0%,100%{translate:0 0;rotate:-3deg}50%{translate:0 -16px;rotate:4deg}}.hero.paused .chip{animation-play-state:paused}.bottom{position:absolute;bottom:30px;left:4.5%;right:4.5%;display:flex;align-items:end;justify-content:space-between;gap:24px}.caption{font-size:11px;line-height:1.8;letter-spacing:.04em}.caption span{color:var(--muted)}.motion{border:1px solid #626a69;border-radius:25px;background:#111313a6;color:var(--white);padding:10px 15px;cursor:pointer;font-size:11px}.note{max-width:300px;font-size:11px;line-height:1.6;color:var(--muted);text-align:right}.work{padding:80px max(5%,calc((100% - 1200px)/2));border-top:1px solid #303636}.work h2{font-size:38px;letter-spacing:-1.5px;font-weight:500;margin:15px 0 35px}.project{display:flex;justify-content:space-between;gap:25px;border-top:1px solid #303636;padding:25px 0}.project h3{font-size:21px;font-weight:500;margin:0 0 10px}.project p{color:var(--muted);font-size:14px;line-height:1.7;max-width:600px;margin:0}.project a{color:var(--blue);white-space:nowrap;font-size:13px;padding-top:4px}.preview-note{font-size:12px;color:var(--muted);margin-top:35px;line-height:1.7}
+@media(min-width:1600px){.intro{top:28%}}@media(max-width:900px){header{padding:25px 5%}nav{gap:18px}.hero{min-height:780px}.intro{left:54%;right:4%;top:25%}h1{font-size:70px}.portrait{width:75%;left:-12%}.intro p{font-size:14px}.orbit{left:5%;width:44%}.actions{gap:16px;flex-wrap:wrap}.note{max-width:220px}}
+@media(max-width:600px){.hero{height:auto;min-height:1060px;max-height:none}header{padding:23px 6%;align-items:center}.brand{font-size:19px}nav{gap:16px;font-size:11px}.contact{display:none}.portrait{left:0;top:70px;width:100%;height:565px}.portrait img{object-position:50% 22%}.portrait:after{background:linear-gradient(0deg,var(--bg),transparent 35%,transparent 80%,var(--bg))}.intro{top:660px;left:7%;right:7%}.eyebrow{font-size:9px;letter-spacing:2px}h1{font-size:64px;margin:20px 0}h1 span{display:inline}.intro p{font-size:14px;max-width:340px;margin:20px 0}.orbit{top:420px;left:7%;width:85%;height:170px}.creator{top:0}.builder{top:20%}.leader{left:30%;bottom:0}.chip{font-size:11px}.bottom{bottom:20px;left:7%;right:7%}.caption,.note{display:none}.motion{font-size:10px;padding:8px 12px}.work{padding:50px 7%}.work h2{font-size:30px}.project{flex-direction:column;gap:14px}}
+@media(max-width:600px){.hero{min-height:940px}.portrait{height:445px}.orbit{top:330px;height:150px}.intro{top:520px}h1 span{display:block}.actions{gap:14px}.intro p{margin:18px 0}}
+/* Portrait-first, monochrome direction. */
+:root{--bg:#101010;--white:#f0f0f0;--muted:#bcbcbc;--blue:#c2c2c2}
+.hero{height:100svh;min-height:700px;max-height:none}
+.portrait{inset:0;width:100%;height:100%;left:0}
+.portrait img{object-position:50% 5%;filter:grayscale(1) brightness(.65)}
+.portrait:after{background:linear-gradient(0deg,#080808e8,transparent 35%,transparent 65%,#080808a0)}
+header{text-shadow:0 2px 12px #000}.contact{background:#171717a0}
+.intro{top:auto;bottom:85px;left:5%;right:auto;max-width:560px;text-shadow:0 2px 20px #000}
+.intro .eyebrow,.intro .actions{display:none}
+h1{font-size:clamp(44px,5.5vw,86px);margin:0 0 15px;letter-spacing:-.055em}h1 span{display:inline;color:var(--white)}h1 span:before{content:' '}
+.intro p{font-size:14px;max-width:340px;margin:0;color:#ddd}
+.orbit{inset:0;width:100%;height:100%;pointer-events:none}
+.chip{pointer-events:auto;flex-direction:column;gap:12px;padding:18px;min-width:116px;border-radius:28px;text-shadow:0 2px 8px #000;cursor:pointer;font-size:13px;transition:background .2s}
+.chip:hover,.chip:focus-visible{animation-play-state:paused;background:#111111c9}
+.chip i{display:grid;place-items:center;background:#242424;border:1px solid #888;color:#ededed;width:76px;height:76px;box-shadow:0 8px 28px #0008;border-radius:50%;transform:none}
+.chip svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.chip span{background:#151515dc;border:1px solid #666;padding:7px 12px;border-radius:20px;white-space:nowrap}
+.creator{left:15%;top:30%;transform:none}.builder{right:13%;top:35%}.leader{left:auto;right:26%;bottom:17%}
+.bottom{bottom:24px;align-items:center}.caption{display:none}.note{color:#ddd}.motion{background:#181818c9}
+.project{scroll-margin-top:30px}.project:target{outline:1px solid #999;outline-offset:12px}
+@media(max-width:600px){.hero{height:100svh;min-height:760px}.portrait{inset:0;height:100%;width:100%}.portrait img{object-position:50% 25%}.intro{top:auto;bottom:90px;left:7%;right:7%}h1{font-size:46px}h1 span{display:inline}.intro p{font-size:13px;max-width:280px}.orbit{inset:0;width:100%;height:100%}.chip{min-width:90px;padding:10px;gap:9px;font-size:11px}.chip i{width:58px;height:58px}.chip svg{width:25px;height:25px}.creator{left:5%;top:36%}.builder{right:5%;top:43%}.leader{right:35%;bottom:29%}.bottom{bottom:25px}.note{display:block;max-width:160px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.chip{animation:none!important}}
+.chip{animation:entrance 4s ease-in-out both}.leader{left:25%;right:auto;top:55%;bottom:auto}.connect{right:22%;top:58%}.bottom{justify-content:flex-end}
+@keyframes entrance{0%{transform:translateY(14px) rotate(-3deg)}45%{transform:translateY(-12px) rotate(3deg)}100%{transform:translateY(0) rotate(0)}}
+@media(max-width:600px){.leader{left:8%;top:54%;bottom:auto;right:auto}.connect{right:5%;top:59%}.intro{bottom:65px}}
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="wrap">
-    <header>
-      <a class="wordmark" href="./" aria-label="Patrick Taylor home">builtbyPat<span> / portfolio</span></a>
-      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="https://github.com/builtbyPat05">GitHub ↗</a></nav>
-    </header>
-    <main id="main">
-      <section class="hero" aria-labelledby="intro-title">
-        <p class="eyebrow">Patrick Taylor · Computer Science &amp; AI</p>
-        <h1 id="intro-title">Curiosity, turned<br>into <em>working code.</em></h1>
-        <p class="intro">I’m a computer science student at Indiana University Bloomington, specializing in artificial intelligence. I build web applications and explore what we can learn from data.</p>
-        <div class="hero-links"><a class="button" href="#projects">Explore my projects ↓</a><a href="https://linkedin.com/in/patricktaylor-connect">Connect on LinkedIn ↗</a></div>
-      </section>
-      <section id="projects" aria-labelledby="projects-title">
-        <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span class="label">Explore the source</span></div>
-        <div class="projects">
-          <article>
-            <span class="number">01 / Full-stack development</span>
-            <h3>PatsMemoir<br>Creator Analytics</h3>
-            <p>A creator analytics dashboard with adapters for YouTube, TikTok, Instagram, and Facebook. Includes sample-data views, account connections, and daily metric snapshots.</p>
-            <div class="tags" aria-label="Technologies"><span>TypeScript</span><span>Next.js</span><span>React</span><span>Supabase</span><span>PostgreSQL</span></div>
-            <a class="project-link" href="https://github.com/builtbyPat05/patsmemoir-creator-analytics">View project on GitHub ↗</a>
-          </article>
-          <article>
-            <span class="number">02 / Machine learning</span>
-            <h3>Student Productivity<br>Prediction</h3>
-            <p>A regression study exploring student productivity. Compares Linear Regression and SGDRegressor using cross-validation, with experiments in L1, L2, and Elastic Net regularization.</p>
-            <div class="tags" aria-label="Technologies"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Jupyter</span></div>
-            <a class="project-link" href="https://github.com/builtbyPat05/student-productivity-prediction">Explore the notebook &amp; code ↗</a>
-          </article>
-        </div>
-      </section>
-      <section class="about" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">Beyond the code.</h2>
-        <div><p>My interests span software, machine learning, and digital storytelling. Alongside my technical projects, I create content through PatsMemoir and lead Indiana University’s chapter of the National Society of Black Engineers.</p><p>B.S. in Computer Science · Artificial Intelligence cognate<br>Expected graduation: May 2027</p></div>
-      </section>
-    </main>
-    <footer><span>Patrick Taylor · Built with intention.</span><div><a href="https://github.com/builtbyPat05">GitHub</a><a href="https://linkedin.com/in/patricktaylor-connect">LinkedIn</a></div></footer>
-  </div>
+<a class="skip" href="#intro">Skip to introduction</a>
+<main>
+<section class="hero" aria-labelledby="name">
+<div class="portrait"><img src="patrick-portrait.jpeg" alt="Patrick Taylor wearing a gray suit and adjusting his tie" width="2921" height="4381" fetchpriority="high"></div>
+<header><a class="brand" href="#intro" aria-label="Patrick Taylor home">patrick<span>✳</span></a><nav aria-label="Main navigation"><a href="https://github.com/builtbyPat05">GitHub ↗</a></nav></header>
+<div class="intro" id="intro"><div class="eyebrow">Curiosity, with a purpose</div><h1 id="name">Patrick<span>Taylor.</span></h1><p>I create, build with AI, and bring people together. Turning ideas into things that make a difference.</p></div>
+<nav class="orbit" aria-label="Explore my work by interest"><a class="chip creator" href="creator.html"><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4" y="6" width="24" height="20" rx="4"/><path d="m13 11 8 5-8 5z"/></svg></i><span>Creator ↗</span></a><a class="chip builder" href="builder.html"><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m16 3 12 7v13l-12 7-12-7V10zM4 10l12 7 12-7M16 17v13M10 6l12 7"/></svg></i><span>Builder ↗</span></a><a class="chip leader" href="leader.html"><i aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="10" r="4"/><path d="M8 27v-4a8 8 0 0 1 16 0v4M6 9a4 4 0 0 0 0 8M26 9a4 4 0 0 1 0 8M3 26v-4M29 26v-4"/></svg></i><span>Leader ↗</span></a><a class="chip connect" href="connect.html"><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 5h22v17H15l-7 6v-6H5zM11 12h10M11 16h6"/></svg></i><span>Let’s connect ↗</span></a></nav>
+<div class="bottom"><div class="caption">A human behind the ideas.<br><span>AI · Creativity · Leadership</span></div><div class="note">Building toward a future<br>I want to be part of.</div></div>
+</section>
+</main>
+
 </body>
 </html>
