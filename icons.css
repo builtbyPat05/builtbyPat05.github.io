@@ -1,0 +1,18 @@
+/* Vector marks cannot be substituted with platform emoji glyphs. */
+.inline-icon, .chip .inline-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -.12em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+.brand .brand-mark {
+  width: 1em;
+  height: 1em;
+  margin-left: .08em;
+  flex-shrink: 0;
+}
+.resume-link, footer a { gap: .35em; }
