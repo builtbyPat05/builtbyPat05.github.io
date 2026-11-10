@@ -70,3 +70,14 @@ h1 span:before{content:" "}
  header:focus-within,.intro:focus-within,.orbit:focus-within{animation:none}
 }
 @media(prefers-reduced-motion:reduce){.chip{animation:none!important}.socials a,.chip,.chip i{transition:none}}
+
+/* Direct entry to the lead technical project. */
+.featured-project { display: block; width: fit-content; margin: 12px 0; color: #fff; font-size: 14px; line-height: 1.5; text-decoration: underline; text-underline-offset: 4px; }
+.featured-project:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
+@media (max-width: 600px) {
+  .hero { min-height: 900px; }
+  .featured-project { max-width: 290px; font-size: 13px; }
+}
+@media (max-width: 600px) {
+  .leader, .connect { top: 48%; }
+}

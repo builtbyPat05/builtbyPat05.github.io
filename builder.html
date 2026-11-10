@@ -28,12 +28,12 @@
 <main id="main" tabindex="-1">
 <p class="kicker">Builder / Patrick Taylor</p>
 <h1>Ideas into useful things.</h1>
-<p class="lede">I enjoy building with AI—especially when the result solves a problem I’ve experienced myself.</p>
+<p class="lede">I build around problems I understand firsthand, and use experiments and testing to evaluate the results.</p>
 <section class="case" id="creator-dashboard">
 <h2>PatsMemoir Creator Analytics</h2>
 <div>
 <p class="project-status">Deployed on Vercel · Connected analytics</p>
-<a href="https://creator-dashboard-roan.vercel.app/" target="_blank" rel="noopener noreferrer">Open live dashboard <svg class="inline-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<a href="https://creator-dashboard-roan.vercel.app/" target="_blank" rel="noopener noreferrer">Open current live dashboard <svg class="inline-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
 <path d="M6 18 18 6M6 6h12v12"/>
 </svg>
 </a>
@@ -53,6 +53,11 @@
 <p>Windsor connects the source platforms to server-side adapters in Next.js. TypeScript defines the shared data structure, and React displays the metrics in a responsive interface styled with Tailwind CSS and custom CSS. Vercel hosts the application; the API key stays on the server.</p>
 <h3>My role &amp; decisions</h3>
 <p>I defined the requirements, directed implementation, reviewed and tested the results, configured the integrations, and deployed the app. Claude Code and Codex supported development. I separated metrics with different units into individual charts and distinguished reporting-period totals from lifetime video views.</p>
+<h3>Reliability work</h3>
+<p>The dashboard source includes nine passing fixture tests for missing daily values, real zeros, reporting-window boundaries, weighted engagement, and partial platform failures. It uses actual prior-period totals when a channel falls to zero views. Codex implemented this revision under my direction.</p>
+<p>The revision shows incomplete channel periods as unavailable and identifies which channels contribute to the overview. This conservative choice needs validation against provider exports to confirm data coverage. </p>
+<h3>Reading the dashboard</h3>
+<p>The date selector controls period metrics and charts. Post rankings show lifetime views, so a video's total can exceed the selected period's views. Followers represent summed platform counts, which can include the same person on multiple platforms.</p>
 <h3>Current scope</h3>
 <p>YouTube and TikTok are connected. Instagram is pending and shows an empty state. Requests are cached for an hour, with freshness dependent on Windsor and the source platforms. The Growth Coach is a scripted demo. This is a working personal product that I’m continuing to develop.</p>
 </div>
@@ -73,23 +78,20 @@
 </div>
 </section>
 <section class="case">
-<h2>Student Productivity Prediction</h2>
+<h2>Student Performance Prediction</h2>
 <div>
-<p>I compared Linear Regression and SGDRegressor on 5,000 synthetic student records using four-fold cross-validation, achieving 4.51 validation RMSE and 4.55 held-out RMSE.</p>
-<p>I evaluated L1, L2, Elastic Net, and polynomial configurations, documenting model comparisons and visualizations in a notebook.</p>
+<p>I rebuilt this study using 395 mathematics records from UCI. I reserved 79 test rows before four-fold cross-validation, fitted preprocessing inside each fold, and compared a mean baseline, linear regression, Ridge, and regularized SGD.</p>
+<p>Ridge achieved 4.15 test RMSE against 4.55 for the mean baseline, measured on a 0–20 grade scale. The selected configuration had 4.26 mean validation RMSE. I excluded prior-period grades and cumulative absences to examine a harder prediction task.</p>
+<figure class="project-preview"><img src="assets/model-comparison.png" width="1980" height="810" alt="Model comparison. Ridge test RMSE 4.15 grade points and mean baseline 4.55." loading="lazy"><figcaption>Training-only selection followed by evaluation on 79 reserved records.</figcaption></figure>
+<p>Test R² was 0.16. The remaining error, small test sample, and two-school historical population limit the result. Questionnaire timing also needs verification for prospective use. The notebook records dataset attribution, split settings, fold results, predictions, and package versions.</p>
+<p>This replaces my earlier synthetic productivity study after its source data became unavailable. The revised notebook was implemented and evaluated with Codex assistance.</p>
 <a href="https://github.com/builtbyPat05/student-productivity-prediction">Explore the notebook <svg class="inline-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
 <path d="M6 18 18 6M6 6h12v12"/>
 </svg>
 </a>
 </div>
 </section>
-<section class="case">
-<h2>Dining Hall Wait Time Prediction</h2>
-<div>
-<p>I engineered time, location, and weather features from dining hall observations and trained a Categorical Naive Bayes classifier to predict short, medium, or long waits.</p>
-<p>I analyzed pilot congestion data and designed an architecture for crowdsourced wait-time updates.</p>
-</div>
-</section>
+
 <footer>
 <a href="Patrick-Taylor-Resume.pdf" target="_blank" rel="noopener">View résumé (PDF) <svg class="inline-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
 <path d="M6 18 18 6M6 6h12v12"/>
